@@ -1,0 +1,155 @@
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.period-selector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.period-btn {
+  padding: 10px 16px;
+  border: 2px solid #e8e8e8;
+  border-radius: 20px;
+  background: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.period-btn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.period-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  color: white;
+}
+
+.total-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+.total-label {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 8px;
+}
+
+.total-amount {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.total-count {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin-top: 8px;
+}
+
+.category-breakdown h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-row {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-row > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.category-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.category-color {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+.category-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.category-count {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.category-stats {
+  text-align: right;
+}
+
+.category-amount {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.category-percentage {
+  font-size: 0.85rem;
+  color: #888;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #f0f0f0;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.empty-summary {
+  text-align: center;
+  padding: 40px;
+  color: #888;
+  background: white;
+  border-radius: 16px;
+}

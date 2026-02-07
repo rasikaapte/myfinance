@@ -1,2 +1,4 @@
 # MyFinance Dependencies
-# Add your project dependencies here
+# No external dependencies required - uses Python standard library only
+# sqlite3 - included in Python standard library
+# datetime - included in Python standard library
