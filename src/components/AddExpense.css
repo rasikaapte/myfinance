@@ -85,7 +85,7 @@ form {
 
 .form-group input:focus {
   outline: none;
-  border-color: #667eea;
+  border-color: #11998e;
 }
 
 .amount-input {
@@ -99,12 +99,12 @@ form {
 }
 
 .amount-input:focus-within {
-  border-color: #667eea;
+  border-color: #11998e;
 }
 
 .currency {
   font-size: 1.5rem;
-  color: #667eea;
+  color: #11998e;
   font-weight: 600;
 }
 
@@ -140,13 +140,14 @@ form {
 }
 
 .category-btn:hover {
-  border-color: var(--cat-color);
-  background: color-mix(in srgb, var(--cat-color) 10%, white);
+  border-color: #11998e;
+  background: #f0fdf9;
 }
 
 .category-btn.selected {
-  border-color: var(--cat-color);
-  background: color-mix(in srgb, var(--cat-color) 15%, white);
+  border-color: #11998e;
+  background: #e6f7f5;
+  box-shadow: 0 0 0 2px rgba(17, 153, 142, 0.2);
 }
 
 .cat-icon {
@@ -162,7 +163,7 @@ form {
 .submit-btn {
   width: 100%;
   padding: 16px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
   color: white;
   border: none;
   border-radius: 12px;
@@ -174,5 +175,5 @@ form {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
 }

@@ -1,0 +1,423 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Net Worth Card */
+.net-worth-card {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  border-radius: 20px;
+  padding: 28px;
+  color: white;
+  text-align: center;
+}
+
+.net-worth-label {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.net-worth-amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 10px 0;
+  letter-spacing: -1px;
+}
+
+.net-worth-breakdown {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.breakdown-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.breakdown-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.breakdown-dot.savings {
+  background: #4CAF50;
+}
+
+.breakdown-dot.investments {
+  background: #9C27B0;
+}
+
+.breakdown-dot.retirement {
+  background: #3F51B5;
+}
+
+/* Add Account Button */
+.add-account-btn {
+  padding: 14px 24px;
+  background: white;
+  border: 2px solid #e8e8e8;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #11998e;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-account-btn:hover {
+  border-color: #11998e;
+  background: #f0fdf9;
+}
+
+/* Add Account Form */
+.add-account-form {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.add-account-form .form-group {
+  margin-bottom: 20px;
+}
+
+.add-account-form .form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.add-account-form .form-group input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.add-account-form .form-group input:focus {
+  outline: none;
+  border-color: #11998e;
+}
+
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.type-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.type-btn:hover {
+  border-color: #11998e;
+  background: #f0fdf9;
+}
+
+.type-btn.selected {
+  border-color: #11998e;
+  background: #e6f7f5;
+  box-shadow: 0 0 0 2px rgba(17, 153, 142, 0.2);
+}
+
+.type-icon {
+  font-size: 1.1rem;
+}
+
+.type-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.add-account-form .amount-input {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 0 14px;
+  transition: border-color 0.2s;
+}
+
+.add-account-form .amount-input:focus-within {
+  border-color: #11998e;
+}
+
+.add-account-form .amount-input span {
+  color: #11998e;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.add-account-form .amount-input input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 14px 8px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.add-account-form .amount-input input:focus {
+  outline: none;
+}
+
+.institution-select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #e8e8e8;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.institution-select:focus {
+  outline: none;
+  border-color: #11998e;
+}
+
+.add-account-form .submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add-account-form .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(17, 153, 142, 0.4);
+}
+
+/* Account Groups */
+.account-group {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 14px;
+}
+
+.group-icon {
+  font-size: 1.3rem;
+}
+
+.group-title {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.group-total {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #11998e;
+}
+
+/* Accounts List */
+.accounts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: transform 0.2s;
+}
+
+.account-item:hover {
+  transform: translateX(4px);
+}
+
+.account-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.account-details {
+  flex: 1;
+  min-width: 0;
+}
+
+.account-name {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.account-type {
+  font-size: 0.8rem;
+  color: #888;
+  margin-top: 2px;
+}
+
+.account-balance-section {
+  text-align: right;
+}
+
+.account-balance {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.account-balance:hover {
+  background: #e8e8e8;
+}
+
+.account-growth {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.account-growth.positive {
+  color: #11998e;
+}
+
+.account-growth.negative {
+  color: #e53935;
+}
+
+.edit-balance input {
+  width: 100px;
+  padding: 6px 10px;
+  border: 2px solid #11998e;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: right;
+}
+
+.edit-balance input:focus {
+  outline: none;
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.website-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e3f2fd;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s;
+  opacity: 0.7;
+}
+
+.website-btn:hover {
+  background: #bbdefb;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.account-item .delete-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #ccc;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account-item:hover .delete-btn {
+  opacity: 1;
+}
+
+.account-item:hover .website-btn {
+  opacity: 1;
+}
+
+.account-item .delete-btn:hover {
+  background: #ffebee;
+  color: #e53935;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 50px 20px;
+  color: #888;
+}
+
+.empty-icon {
+  font-size: 3.5rem;
+  margin-bottom: 16px;
+}
+
+.empty-state h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 8px;
+}
